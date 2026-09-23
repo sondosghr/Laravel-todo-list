@@ -25,17 +25,12 @@
 1. Clone the repository:
    ```bash
    git clone [https://github.com/sondosghr/Laravel-todo-app.git](https://github.com/sondosghr/Laravel-todo-app.git)
-
 2. Install dependencies:
  composer install
-
 3. Setup environment file:
  cp .env.example .env
 php artisan key:generate
-
-
 4.Run migrations:
 php artisan migrate
-
 5.Start local server:
 php artisan serve
