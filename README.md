@@ -26,11 +26,20 @@
    ```bash
    git clone [https://github.com/sondosghr/Laravel-todo-app.git](https://github.com/sondosghr/Laravel-todo-app.git)
 2. Install dependencies:
+  ```bash
  composer install
-3. Setup environment file:
+4. Setup environment file:
+  ```bash
  cp .env.example .env
 php artisan key:generate
+ملاحظة: يجب إنشاء قاعدة البيانات محلياً وتعديل اسم قاعدة البيانات (DB_DATABASE) داخل ملف .env ليكون مطابقاً لها قبل تنفيذ الـ Migrations.
+
 4.Run migrations:
+  ```bash
 php artisan migrate
 5.Start local server:
+  ```bash
 php artisan serve
+ملاحظة: بعد تشغيل السيرفر المحلي، افتح المسار المباشر لصفحة المهام في المتصفح:
+
+http://127.0.0.1:8000/tasks
